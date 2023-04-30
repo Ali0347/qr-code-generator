@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+body {
+     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(33, 136, 245);
+}
+
+/* .logo{
+  display:flex;
+  height: 112px;
+  position: relative;
+  margin-left: -50;
+} */
+
+.wrapper {
+    height: 290px;
+    background-color: #fff;
+    max-width: 410px;
+    transition: height 0.2s ease;
+}
+
+.wrapper.active{
+    height: 555px;
+  }
+
+header h1 {
+    font-size: 21px;
+    font-weight: 500px;
+}
+
+
+header p {
+    font-size: 16px;
+    font-weight: 500px;
+    color: rgb(44, 40, 40);
+}
+
+.wrapper .form {
+
+}
+
+.form :where(input, button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+
+}
+
+.form input {
+    border: 1px solid #999;
+    font-size: 18px;
+}
+
+.form button {
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    background-color: rgb(33, 136, 245);
+}
+
+.qr-code {
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+   
+}
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s ease;
+
+  }
+
+  @media only screen and (max-width: 650px) {
+    body .head{
+      font-size: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 597px) {
+    body .head{
+      font-size: 18px;
+      line-height: 29px;
+      background-color: black;
+    }
+  }
+
+
+  footer{
+    margin-bottom: -427px;
+    margin-top: 100%;
+    text-align: center;
+    margin-left: -30%;
+  }
